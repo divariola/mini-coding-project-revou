@@ -12,10 +12,15 @@
         <nav class="navbarbutton">
             <a class="navbar" href="#home">Home</a>
             <a class="navbar" href="#ourpackage">Our Package</a>
-            <a class="navbar" href="#callus">Call Us</a>
+            <a class="navbar" href="#callus">Contact Us</a>
             <input type="text" class="searchbar" placeholder="Search..">
         </nav>
     </header>
+
+
+    <a id="scrollToTop" class="scroll-to-top" href="#top">
+        <img src="https://img.freepik.com/premium-vector/swipe-up-icon-isolated-background-social-media-stories-scroll-pictogram-arrow-up-logo-blogger_172533-929.jpg" alt="Scroll to Top" />
+    </a>
 
     <main>
         <section id="home">
@@ -75,36 +80,80 @@
             <div class="grid-container">
                 <div class="grid-item">
                     <h3>Bali</h3>
-                    <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                    <p>A tropical paradise known for its vibrant culture, scenic beaches, and spiritual charm.</p>
                 </div>
                 <div class="grid-item">
-                    <h3>Japan</h3>
-                    <p>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                    <h3>Yogyakarta</h3>
+                    <p>A cultural hub of Indonesia, Jogja is famous for its royal heritage, batik, and ancient temples like Borobudur and Prambanan.</p>
                 </div>
                 <div class="grid-item">
-                    <h3>Singapore</h3>
-                    <p>This description supports and extends the bullet point above.</p>
+                    <h3>Jakarta</h3>
+                    <p>A dynamic capital blending modernity with rich cultural and historical roots.</p>
                 </div>
                 <div class="grid-item">
                     <h3>Bandung</h3>
-                    <p>This description supports and extends the bullet point above.</p>
+                    <p>Known as the "Paris of Java," Bandung charms visitors with its cool climate, stunning highlands, and vibrant culinary and fashion scenes.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Belitung</h3>
+                    <p>A hidden gem with white sandy beaches, unique granite rock formations, and crystal-clear waters.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Lombok</h3>
+                    <p>A serene escape with pristine beaches, the majestic Mount Rinjani, and the tranquil Gili Islands.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Bromo</h3>
+                    <p>An iconic volcano offering surreal landscapes and epic sunrise views in East Java.</p>
                 </div>
                 <div class="grid-item">
                     <h3>Surabaya</h3>
-                    <p>This description supports and extends the bullet point above.</p>
+                    <p>Indonesia's second-largest city, Surabaya is a bustling port hub with a rich history, modern architecture, and a vibrant culinary culture.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Raja Ampat</h3>
+                    <p>A breathtaking archipelago renowned for its vibrant coral reefs and marine biodiversity.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery-images" class="image-gallery">
+            <h3 class="h3-galleryimages">Other popular destinations</h3>
+            <div class="image-container">
+                <img src="https://asset.kompas.com/crops/UdToAuQmYSXZVq44s9FGqC6wZ58=/0x0:780x520/1200x800/data/photo/2019/08/21/5d5ccedb6f21e.jpg" alt="Dieng" class="rounded-image">
+                <div class="image-text">
+                    <div class="main-title">Dieng</div>
+                    <div class="subtitle">Central Java</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/95/2024/03/09/photo1709952851-665202252.jpeg" alt="Danau Toba" class="rounded-image">
+                <div class="image-text">
+                    <div class="main-title">Danau Toba</div>
+                    <div class="subtitle">North Sumatra</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://atourin.obs.ap-southeast-3.myhuaweicloud.com/images/destination/lombok/gili-meno-profile1645590737.jpeg?x-image-process=image/resize,p_100,limit_1/imageslim" alt="Pulau Gili" class="rounded-image">
+                <div class="image-text">
+                    <div class="main-title">Pulau Gili</div>
+                    <div class="subtitle">Lombok</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://enimekspres.bacakoran.co/upload/82effb7e7b2b776d68f8b082d6fc5483.jpg" alt="Pantai Pink" class="rounded-image">
+                <div class="image-text">
+                    <div class="main-title">Pantai Pink</div>
+                    <div class="subtitle">East Nusa Tenggara</div>
                 </div>
             </div>
         </section>
 
         <section id="callus" class="our-package-content">
-            <h2>Call Us</ h2>
+            <h2>Contact Us</ h2>
             <button id="callButton">CALL TO ACTION</button>
         </section>
     </main>
-
-    <footer>
-        <span>Made by Divariola</span>
-    </footer>
 
     <script>
         let slideIndex = 0;
@@ -126,5 +175,12 @@
             document.getElementById('callus').scrollIntoView({ behavior: 'smooth' });
         });
     </script>
+
+        <footer>
+            <span>Made by Divariola</span>
+        </footer>
+
+
+<script src="script.js"></script>
 </body>
 </html>
