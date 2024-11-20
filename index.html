@@ -1,56 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document Jennifer Divariola Sendjaja</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-
-    <body>
-<header class="main-header">
-    <div class="main-logo"></div>
-
-    <nav>
-        <a class="navbar" href="#">Home</a>
-        <a class="navbar" href="#">Our Package</a>
-        <a class="navbar" href="#">Call Us</a>
-    </nav>
-</header>
-
-<hr />
-
-<main>
-    <header class="main-article-header">
-        <h1>Your Trusted Travel Agent</h1>
-        <h3>Your happiness is our happiness</h3>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalanpedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-logo"></div>
+        <nav class="navbarbutton">
+            <a class="navbar" href="#home">Home</a>
+            <a class="navbar" href="#ourpackage">Our Package</a>
+            <a class="navbar" href="#callus">Call Us</a>
+            <input type="text" class="searchbar" placeholder="Search..">
+        </nav>
     </header>
 
-    <article class="main-article">
-        <section class="container-banner">
-            <div class="banner-autoslide"></div>
+    <main>
+        <section id="home">
+            <header class="main-article-header">
+                <h1>Jalanpedia</h1>
+                <h3>Bikin kamu pengen cepet-cepet liburan</h3>
+            </header>
 
-            <p>Lorem Ipsum Dolor Sit Amet Adipiscing</p>
+            <article class="main-article">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://www.iwarebatik.org/wp-content/uploads/2019/09/borobudur.jpg" style="width:100%">
+                        <p> A magnificent 9th-century Mahayana Buddhist monument in Central Java, Borobudur is renowned for its intricate carvings and serene ambiance.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://smansasingaraja.sch.id/wp-content/uploads/2021/03/8994658f-13ad-4106-bde4-856450359f47-1200x675.jpg" style="width:100%">
+                        <p> Known as the Island of the Gods, Bali captivates visitors with its lush landscapes, vibrant culture, and pristine beaches.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://i0.wp.com/mytravelation.com/wp-content/uploads/2023/11/Jakarta.jpeg" style="width:100%">
+                        <p> Indonesia's bustling capital city, Jakarta blends modern skyscrapers with rich cultural heritage and a lively urban atmosphere.</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://res.cloudinary.com/zublu/image/fetch/f_webp,w_1200,q_auto/https://www.zubludiving.com/images/Indonesia/West-Papua/Raja-Ampat/Raja-Ampat-Wayag-Diving.jpg" style="width:100%">
+                        <p>A paradise for divers and nature lovers, Raja Ampat boasts stunning coral reefs and diverse marine life in West Papua. </p>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                    <form>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="First and last name" required>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        <label for="options">What are you interested in?</label>
+                        <select id="options" name="interests" required>
+                            <option value="" disabled selected>Select Option</option>
+                            <option value="product1">Product 1</option>
+                            <option value="product2">Product 2</option>
+                            <option value="service1">Service 1</option>
+                            <option value="service2">Service 2</option>
+                        </select>
+                        <input type="submit" class="sendbutton" value="SEND">
+                    </form>
+                </div>
+            </article>
         </section>
 
-        <section>
-            <h2>Form Contact Us</h2>
+        <section id="ourpackage">
+            <header class="our-package-header">
+                <h1>Our Package</h1>
+            </header>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Bali</h3>
+                    <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Japan</h3>
+                    <p>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Singapore</h3>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Bandung</h3>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Surabaya</h3>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
         </section>
-    </article>
 
-    <article>
-        <header class="our-package-header">
-            <h1>Our Package</h1>
-        </header>
-
-        <section class="our-package-content">
-            <h2>Konten Our Package</h2>
+        <section id="callus" class="our-package-content">
+            <h2>Call Us</ h2>
+            <button id="callButton">CALL TO ACTION</button>
         </section>
-    </article>
-</main>
+    </main>
 
-<footer>
-    <span>Made by Divariola</span>
-</footer>
-    </body>
+    <footer>
+        <span>Made by Divariola</span>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 3 seconds
+        }
+
+        document.getElementById('callButton').addEventListener('click', function() {
+            document.getElementById('callus').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
 </html>

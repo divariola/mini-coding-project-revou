@@ -1,6 +1,60 @@
+/* .main-header {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* Header Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; 
+}
+
+
+/* Header Styles */
 .main-header {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Center align items vertically */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #fff; /* Background color for the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.searchbar {
+    margin-left: 40px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sendbutton {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sendbutton:hover {
+    background-color: darkblue;
 }
 
 .main-article {
@@ -8,52 +62,152 @@
     justify-content: space-evenly;
 }
 
-<!-- .container-banner{
-    display: block;
-    unicode-bidi: isolate;
-} -->
+.main-article-header {
+    text-align: center;
+}
 
 .main-logo {
     height: 75px;
     width: 75px;
     background-image: url(https://picsum.photos/200);
     background-position: center;
+    background-size: cover; /* Ensure the logo covers the entire div */
     border-radius: 50%;
 }
 
-.nav {
+.navbarbutton {
     display: flex;
     align-items: center;
 }
 
 .navbar {
-    color:black;
+    color: black;
     text-decoration: none;
-    border: 1px solid;
-    padding: 10px;
+    border: 1px solid transparent; /* Transparent border for hover effect */
+    padding: 10px 15px; /* Add horizontal padding for better spacing */
+    margin: 0 10px; /* Space between navbar items */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-.main-article-header {
-    text-align: center;
+/* Existing CSS... */
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    width: 700px; /* Set a width for the slideshow */
+    margin-right: 20px; /* Space between slideshow and contact form */
 }
 
-header, 
-main {
-    margin: 32px;
+.mySlides {
+    display: none; /* Hide all slides by default */
 }
 
-.banner-autoslide {
-    height: 250px;
-    background-image: url(https://picsum.photos/500);
-    background-position: center;
-    background-size: cover;
+img {
+    width: 100%; /* Make images responsive */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px; /* Corrected */
+    color: white; /* Moved to its own line */
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Centering the contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form */
+    margin-top: 20px; /* Space above the form */
 }
 
 .our-package-header {
     text-align: center;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 70px;
+}
+
+.contact-form {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Fixed width for the form */
+    margin-right: 20px; /* Space from the right edge */
+    margin-bottom: 50px;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.grid-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
 }
 
 .our-package-content {
     text-align: center;
+    position: relative; /* Ensure relative positioning */
+    padding: 20px; /* Add some padding */
 }
 
+#callButton {
+    position: absolute; /* Position it absolutely */
+    bottom: 20px; /* Distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    background-color: blue; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    margin-top: 50px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#callButton:hover {
+    background-color: darkblue; /* Darker color on hover */
+}
