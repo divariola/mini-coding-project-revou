@@ -50,12 +50,6 @@ body {
     display: block; /* Remove any space below the image */
 }
 
-.scroll-to-top img {
-    width: 100%; /* Make the image fill the button */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any space below the image */
-}
-
 /* Label Styles */
 .label {
     display: block;
@@ -73,7 +67,7 @@ body {
     border: 1px solid #ccc; /* Border for input fields */
     border-radius: 4px; /* Rounded corners for input fields */
     box-sizing: border-box; /* Include padding and border in the element's total width */
-    transition: border-color 0.3s; /* Smooth transition for border */
+    transition: border-color 0.3s; /* Added 's' for seconds */
 }
 
 .contact-form input[type="text"]:focus,
@@ -103,7 +97,7 @@ body {
     justify-content: space-evenly;
 }
 
- .main-article-header {
+.main-article-header {
     text-align: center;
 }
 
@@ -219,9 +213,10 @@ img {
     margin-top: 20px; /* Add margin to ensure it is below the sticky header */
 }
 
-.h3-galleryimages {
+.h3-gallery-images {
     position: absolute; /* Position the heading absolutely */
-    top: 10px; /* Adjust the distance from the top for more gap */
+    top: 0px; /* Adjust the distance from the top for more gap */
+    margin-bottom: 20px;
     left: 40px; /* Move the heading more to the right */
     text-align: left; /* Align the text to the left */
     font-size: 24px; /* Increase the font size */
@@ -242,7 +237,7 @@ img {
     height: 450px; /* Set a fixed height for each image */
     border-radius: 8px; /* Round the corners */
     object-fit: cover; /* Ensure the image covers the entire area */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 /* Text Overlay Styles */
@@ -279,7 +274,7 @@ img {
     padding: 20px;
     width: 300px; /* Fixed width for the form */
     margin-right: 20px; /* Space from the right edge */
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* Space below the form */
 }
 
 /* Grid Item Styles */
@@ -334,4 +329,19 @@ img {
 #callButton:hover {
     background-color: #357ABD; /* Darker color on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.social-icons a {
+    display: inline-block; /* Align icons horizontally */
+}
+
+.social-icons img {
+    width: 40px; /* Set icon size */
+    margin: 0 10px; /* Space between icons */
+}
+
+#socialMedia {
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+    color: white; /* Text color */
 }

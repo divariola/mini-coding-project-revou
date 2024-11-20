@@ -1,8 +1,20 @@
-// Scroll to Top Button functionality
-const scrollToTopButton = document.getElementById("scrollToTop");
+let slideIndex = 0;
+showSlides();
 
-// Show the button when the user scrolls down
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex - 1].style.display = "block";  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
 window.onscroll = function() {
+    const scrollToTopButton = document.getElementById("scrollToTop");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopButton.style.display = "block"; // Show button
     } else {
@@ -10,11 +22,6 @@ window.onscroll = function() {
     }
 };
 
-// Scroll to the top when the button is clicked
-scrollToTopButton.onclick = function(event) {
-    event.preventDefault(); // Prevent default anchor behavior
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth" // Smooth scroll effect
-    });
-};
+document.getElementById('callButton').addEventListener('click', function() {
+    document.getElementById('callus').scrollIntoView({ behavior: 'smooth' });
+});
