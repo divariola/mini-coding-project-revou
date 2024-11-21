@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jalanpedia</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Jalanpedia by Divariola</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="main-header">
         <div class="main-logo"></div>
         <nav class="navbarbutton">
+            <div class="menu-button" id="menuButton">☰</div>
+        <div class="menu-items" id="menuItems">
             <a class="navbar" href="#home">Home</a>
             <a class="navbar" href="#ourpackage">Our Package</a>
             <a class="navbar" href="#callus">Contact Us</a>
@@ -72,6 +74,28 @@
             </article>
         </section>
 
+        <div class="contact-form-responsive">
+            <h2>Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="First and last name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <label for="options">What are you interested in?</label>
+                <select id="options" name="interests" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="product1">Product 1</option>
+                    <option value="product2">Product 2</option>
+                    <option value="service1">Service 1</option>
+                    <option value="service2">Service 2</option>
+                </select>
+                <input type="submit" class="sendbutton-responsive" value="SEND">
+            </form>
+        </div>
+    </article>
+</style>
+
         <section id ="ourpackage">
             <header class="our-package-header">
                 <h1>Our Package</h1>
@@ -117,7 +141,7 @@
         </section>
 
         <section id="gallery-images" class="image-gallery">
-            <h3 class="h3-gallery-images">Other popular destinations</h3>
+            <h2 class="h3-gallery-images"> Other popular destinations</h3>
             <div class="image-container">
                 <img src="https://asset.kompas.com/crops/UdToAuQmYSXZVq44s9FGqC6wZ58=/0x0:780x520/1200x800/data/photo/2019/08/21/5d5ccedb6f21e.jpg" alt="Dieng" class="rounded-image">
                 <div class="image-text">
@@ -149,8 +173,11 @@
         </section>
 
         <section id="callus" class="our-package-content">
-            <h2>Contact Us</h2>
-            <button id="callButton">CALL TO ACTION</button>
+            <h2 class="callus">Contact Us</h2>
+            <button id="callButton">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="WhatsApp Logo" style="width: 20px; height: 20px; margin-right: 8px;">
+                Chat With Us
+            </button>
         </section>
 
         <section id="socialMedia" style="background-color: #4a90e2; color: white; text-align: center; padding: 20px;">
