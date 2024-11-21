@@ -25,3 +25,10 @@ window.onscroll = function() {
 document.getElementById('callButton').addEventListener('click', function() {
     document.getElementById('callus').scrollIntoView({ behavior: 'smooth' });
 });
+
+// Menu toggle functionality
+document.getElementById('menuButton').addEventListener('click', function() {
+    const menuItems = document.getElementById('menuItems');
+    menuItems.classList.toggle('active'); // Toggle the 'active' class
+});
+
