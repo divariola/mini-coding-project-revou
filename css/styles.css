@@ -541,32 +541,4 @@ img {
     }
 }
 
-@media (max-width: 768px) {
-    .slideshow-container-responsive {
-        position: relative;
-        width: 90%; /* Make the slideshow smaller */
-        max-width: 600px; /* Set a max width for the slideshow */
-        margin: 40px auto; /* Margin to create space above and below */
-        display: block; /* Ensure it's a block element */
-    }
-    .mySlides-responsive {
-        display: block; /* Hide all slides by default */
-    }
-    
-    .img-responsive {
-        width: 100%; /* Make images responsive */
-        border-radius: 8px; /* Rounded corners for images */
-        display: block;
-    }
-}
 
-.slideshow-container-responsive {
-    display: none;
-}
-.mySlides-responsive {
-        display: none;
-}
-
-.img-responsive {
-    display: none;
-}
